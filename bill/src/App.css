@@ -1,0 +1,21 @@
+body {
+  font-family: lato, sans-serif;
+  color: #565B73;
+}
+
+.xcme{
+  background-color: #0b131a;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.footer{
+  background-color: #131e28;
+ 
+}
+
+.footlink a{
+  color: #ffffff;
+  padding-top: 5px;
+
+}

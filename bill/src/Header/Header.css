@@ -1,0 +1,83 @@
+.header{
+    /* margin-top: 60px; */
+}
+
+.headerTitle {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-family: 'Lara', serif;
+    font-size: #444;
+}
+
+.headerTitleSm{
+    position: absolute;
+    top: 25%;
+    font-size: 30px;
+}
+.headerTitleLg{
+    position: absolute;
+    top: 20%;
+    font-size: 30px;
+}
+.headerImg{
+    width: 100%;
+    height: 450px;
+    /* margin-top: 80px; */
+    object-fit: cover;
+}
+.head{
+    padding-top: 20px;
+}
+
+.head h2{
+    color: #39C0ED;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.head img{
+    width: 600px;
+    height: 490px;
+}
+.head h5{
+    color:#191970;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.head p{
+    font-size: 19px;
+    color: #4f4f4f!important;
+}
+.btn--orange {
+    border-radius: 5px;
+    background: #3359DF;
+    color: #ffffff;
+    padding: 0 40px;
+    height: 50px;
+    line-height: 48px;
+    display: inline-block;
+    -webkit-transition: 0.2s;
+    
+}
+.btn--orange:hover{
+    background: #39C0ED;
+    color: #ffffff;
+}
+
+.btn--orange_signup{
+    border-radius: 5px;
+    background: #F93154;
+    color: #ffffff;
+    padding: 0 40px;
+    height: 50px;
+    line-height: 48px;
+    display: inline-block;
+    -webkit-transition: 0.2s;
+}
+.btn--orange_signup:hover{
+    color: #ffffff;
+    background: #191970;
+}
