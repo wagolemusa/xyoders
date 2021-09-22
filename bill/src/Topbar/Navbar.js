@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Blogs from '../pages/Blogs'
 
 function Navbar(){
-    const user = true;
+    const user = false;
     return(
         <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
         
@@ -32,7 +32,7 @@ function Navbar(){
                     <a class="nav-link px-2" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Hire Developer</a>
+                    <Link to='/Hire' class="nav-link px-2">Hire Developer</Link>
                 </li>
                 <li class="nav-item">
                 <Link to='/Write' class="nav-link px-2">Write Blog</Link>

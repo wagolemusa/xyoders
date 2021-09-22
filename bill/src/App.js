@@ -9,16 +9,17 @@ import Blogs from './pages/Blogs'
 import Single from './single/Single';
 import Write from './write/Write';
 import Settings from './settings/Settings';
+import Hire from './hire/Hire';
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <div className="App">
       <Router>
         <Topbar/>
         <Switch>
           <Route exact path="/">
-            <Settings/>
+            <Home/>
           </Route>
           <Route path="/Register">
            { user ? <Home/> : <Register/>}
@@ -38,8 +39,10 @@ function App() {
           <Route path="/post/:postId">
             <Single/>
           </Route>
+          <Route path="/Hire">
+            <Hire/>
+          </Route>
         </Switch>
-        
       </Router>
      <Footer/>
      
