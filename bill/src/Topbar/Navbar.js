@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import googf from '../images/googf.png'
 import { Link } from 'react-router-dom';
 import Blogs from '../pages/Blogs'
+import { Context } from '../context/Context';
 
 function Navbar(){
-    const user = false;
+    const { user, dispatch } = useContext(Context)
+    const PF = "http://localhost:5000/images/"
+
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+      };
     return(
         <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
         
@@ -26,10 +32,10 @@ function Navbar(){
                     <a class="nav-link px-2" href="#">Acadamy</a>
                 </li>
                 <li class="nav-item">
-                <Link to='/Blogs' class="nav-link px-2">Blogs</Link>
+                <Link to='/AllBlogs' class="nav-link px-2">Blogs</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Portfolio</a>
+                <Link to='/Profile' class="nav-link px-2">Portfolio</Link>
                 </li>
                 <li class="nav-item">
                     <Link to='/Hire' class="nav-link px-2">Hire Developer</Link>
@@ -37,12 +43,17 @@ function Navbar(){
                 <li class="nav-item">
                 <Link to='/Write' class="nav-link px-2">Write Blog</Link>
                 </li>
+                
+                <li className="topListItem" onClick={handleLogout}>
+                     {user && "LOGOUT"}
+                </li>
+                 
                 { 
                     user ? (
-                
-                    <li class="nav-item">
-                    <Link to='/Logout' class="nav-link px-2">LogOut</Link>
-                    </li>
+                 
+                        <Link to="/settings">
+                        <img className="topImg" src={PF+user.profilePic} alt="" />
+                            </Link>
                     ) : (
                         <>
                             <li class="nav-item">

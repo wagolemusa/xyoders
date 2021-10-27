@@ -1,8 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Login.css"
 import signup from "../images/signup.png"
+import axios from 'axios'
 
 function Register(){
+    const [fullname, setFullname ] = useState("")
+    const [username, setUsername ] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [error, setError] = useState(false);
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        setError(false)
+        try{
+            
+            const res = await axios.post("/auth/register",{
+                fullname,
+                username,
+                email,
+                password
+            });
+            res.data && window.location.replace("/login")
+        }catch (err){
+            setError(true);
+        };    
+    }
+
     return(
         <section className="login">
         <div className="row">
@@ -16,23 +40,28 @@ function Register(){
                 <div className="Login__content">
                     <div className="sign-page">
                     <h1>Sign up</h1>
+                    {error && <p style={{ color:"red", fontSize: "20px"}}>Samething went wrong!</p> }
                     <br/>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                     <div class="form-outline mb-4">
-                            <input type="text" id="form5Example1" class="form-control" />
-                            <label class="form-label" for="form5Example1">Full Names</label>
+                            <input type="text" id="form5Example1" class="form-control" placeholder="Full Name"
+                            onChange={e=>setFullname(e.target.value)}
+                            />
                     </div>
                     <div class="form-outline mb-4">
-                            <input type="text" id="form5Example1" class="form-control" />
-                            <label class="form-label" for="form5Example1">Username</label>
+                            <input type="text" id="form5Example1" class="form-control" placeholder="Username"
+                            onChange={e=>setUsername(e.target.value)}
+                            />
                     </div>
                     <div class="form-outline mb-4">
-                            <input type="email" id="form5Example1" class="form-control" />
-                            <label class="form-label" for="form5Example1">Email</label>
+                            <input type="email" id="form5Example1" class="form-control" placeholder="Email"
+                            onChange={e=>setEmail(e.target.value)}
+                            />
                     </div>
                         <div class="form-outline mb-4">
-                            <input type="password"  class="form-control" />
-                            <label class="form-label" for="form5Example2">Password</label>
+                            <input type="password"  class="form-control" placeholder="Password"
+                            onChange={e=>setPassword(e.target.value)}
+                            />
                         </div>
                         <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
                         </form>

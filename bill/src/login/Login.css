@@ -3,7 +3,7 @@
     background-color: #fff;
     border: 2px solid #f2f2f2;
     border-radius: 5px;
-    padding: 15px;
+    /* padding: 15px; */
     width: 100%;
     max-width: 392px;
     height: 45px;
@@ -66,4 +66,7 @@
 .signupimage img{
     width: 600px;
     height: 700px;  
+}
+.Login__content button:disabled{
+    cursor: not-allowed;
 }

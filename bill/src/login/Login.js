@@ -1,8 +1,29 @@
-import React from  'react'
+import React, { useContext, useRef } from  'react'
 import "./Login.css"
 import login from '../images/login.png'
+import { Context } from '../context/Context';
+import axios from 'axios';
 
 function Login(){
+
+    const userRef = useRef();
+    const passwordRef = useRef();
+    const { dispatch, isFetching } = useContext(Context);
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      dispatch({ type: "LOGIN_START" });
+      try {
+        const res = await axios.post("/auth/login", {
+          username: userRef.current.value,
+          password: passwordRef.current.value,
+        });
+        dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+      } catch (err) {
+        dispatch({ type: "LOGIN_FAILURE" });
+      }
+    };
+  
     return(
     <section className="login">
         <div className="row">
@@ -15,17 +36,21 @@ function Login(){
                     <div className="sign-page">
                     <h1>Log in</h1>
                     <br/>
-                    <form>
-                    <div class="form-outline mb-4">
-                            <input type="email" id="form5Example1" class="form-control" />
-                            <label class="form-label" for="form5Example1">Email</label>
-                        </div>
+                    <form onSubmit={handleSubmit}>
                         <div class="form-outline mb-4">
-                            <input type="password"  class="form-control" />
-                            <label class="form-label" for="form5Example2">Password</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block mb-4">Log In</button>
-                        </form>
+                                <input type="text" id="form5Example1" class="form-control" 
+                                    ref={userRef}
+                                />
+                                <label class="form-label" for="form5Example1">username</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password"  class="form-control" 
+                                    ref={passwordRef}
+                                />
+                                <label class="form-label" for="form5Example2">Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mb-4 loginback " disabled={isFetching}>Log In</button>
+                    </form>
                         <a href="#">Forgot your password</a>
                         <hr/>
                         <div id="logreg-forms">

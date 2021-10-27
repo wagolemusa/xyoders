@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import xycodedr from '../images/xycodedr.jpg';
 import xy1 from '../images/xy1.jpg'
-
+import { Link } from "react-router-dom";
 export default function Header(){
     return (
         <section className="head">
@@ -19,9 +19,9 @@ export default function Header(){
                     including design creation, coding, debugging, testing, and maintenance using
                     industry best practices.</p>
                     <br/>
-                    <a href="https://academy.xyoders.co.ke/" target="_blank" class="btn btn--orange">Hire Developer</a>
+                    <Link to="/Hire" class="btn btn--orange">Hire Developer</Link>
                     
-                    <a href="/signup" target="_blank" class="btn btn--orange_signup">Sign-up</a>
+                    <a href="/signup"  class="btn btn--orange_signup">Sign-up</a>
 
                 </div>
                 <div className="col-md-6">

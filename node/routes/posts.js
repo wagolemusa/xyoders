@@ -66,11 +66,37 @@ router.get("/:id", async (req, res) => {
     }
   });
 
-// Get All post
+// Get All post and Limits by 6 items and sort
 router.get("/", async (req, res) => {
 
     const username = req.query.user;
-    const catName = req.query.catName
+    const catName = req.query.cat;
+
+    try{
+        let posts;
+        if(username) {
+            posts = await Posts.find({username})
+        } else if(catName) {
+            posts = await Posts.find({
+                categories: {
+                    $in:[catName],
+                },
+            });
+
+        }else{
+            posts = await Posts.find().sort({_id: -1}).limit(3);
+        }
+        res.status(200).json(posts);
+    }catch (err){
+        res.status(500).json(err)
+    }
+});
+
+// Get All poss by sort
+router.get('/all/post', async (req, res) => {
+
+    const username = req.query.user;
+    const catName = req.query.cat;
 
     try{
         let posts;

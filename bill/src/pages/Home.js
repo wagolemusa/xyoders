@@ -1,12 +1,25 @@
-import React from  'react'
+import React, { useEffect, useState } from  'react'
 import Header from '../Header/Header'
-
+import Posts from '../posts/Posts';
+import axios from "axios"
+import { useLocation } from 'react-router';
 
 export default function Home(){
+    const [posts, setPosts] = useState([]);
+    const { search} = useLocation();
+
+    useEffect(()=>{
+        const fetchPosts = async ()=>{
+            const res = await axios.get("http://localhost:5000/api/posts" +search)
+            setPosts(res.data)
+          
+        }
+        fetchPosts();
+    },[search])
     return(
         <div className="home">
             <Header/>
-            <h2>Home page</h2>
+            <Posts posts={posts} />
 
         </div>
     )

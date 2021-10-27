@@ -14,6 +14,22 @@
     font-family: 'lora', serif;
     font-size: 35px;
 }
+.singlePostInput{
+    margin: 10px;
+    font-family: 'lora', serif;
+    font-size: 35px;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: grey;
+}
+.singlePostDescUpdate{
+    /* border: none; */
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+    width: 400px;
+    height: 100px;
+}
 .singlePostEdit {
     float: right;
     font-size: 20px;
@@ -45,4 +61,17 @@
     margin-left: 20px;
     font-size: 30px;
     font-weight: 600;
+}
+.siglePostButton{
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+    float: right;
+    
 }

@@ -1,67 +1,42 @@
 import React from 'react'
 import './Home.css'
-import xy1 from '../images/xy1.jpg'
+import {Link} from 'react-router-dom'
 
-function Blogs(){
+export default function Blog({post}){
+    const PF = "http://localhost:5000/images/"
     return(
         <div>
         <section>
-            <div className="blog-back">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
                             <div className="mini-track__body">
-                                <img src={xy1} alt="xycoders" 
-                                    class="img-fluid rounded"
-                                    alt="" 
-                                />
-                                <h2>Advanced SQL in PostgreSQL</h2>
-                                <p>
-                                    Go beyond the basics and become a SQL master.
-                                    Learn modern SQL features that let you writ
-                                    more complex and effective querie
-                                </p>
-                                <a href="#">DETAILS</a>
+                            <Link to={`/post/${post._id}`}>
+                                {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
+                            </Link><br/>
+                                <div className="postCats">
+                                    {post.categories.map((c) =>{
+                                        <span className="postcats">{c.name}</span>
+                                    })}
+                             <div className="linkme">
+                                <Link to={`/post/${post._id}`} className="link">
+                                    <span className="postTitle">{post.title}</span>
+                                </Link>
                             </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="mini-track__body">
-                                <img src={xy1} alt="xycoders" 
-                                    class="img-fluid rounded"
-                                    alt="" 
-                                />
                             
-                                <h2>Advanced SQL in PostgreSQL</h2>
                                 <p>
-                                    Go beyond the basics and become a SQL master.
-                                    Learn modern SQL features that let you writ
-                                    more complex and effective querie
+                                    {post.desc.substring(0, 100)}
                                 </p>
-                                <a href="#">DETAILS</a>
-                        
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                        <div className="mini-track__body">
-                        <img src={xy1} alt="xycoders" class="img-fluid rounded"
-                                alt="" />
-                        
-                            <h2>Advanced SQL in PostgreSQL</h2>
-                            <p>
-                                Go beyond the basics and become a SQL master.
-                                Learn modern SQL features that let you writ
-                                more complex and effective querie
-                            </p>
-                            
-                            <a href="#">DETAILS</a>
-                        </div>
-                        </div>
-      
+                                <div className="button--link-small">
+                                <Link to={`/post/${post._id}`} className="link">
+                                    <span className="postTitle">DETAILS <i class="fas fa-arrow-right"></i></span>
+                                </Link>
+                               </div>
+                               
+                                </div>
+                                {/* <div className="postdate">{new Date(post.createdAt).toDateString()}</div> */}
                     </div>
                 </div>
-            </div>
+           
         </section>
         </div>
     )
 }
-export default Blogs
