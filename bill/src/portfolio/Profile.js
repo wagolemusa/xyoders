@@ -4,7 +4,7 @@ import About from './About';
 import Footer from './Footer';
 import './Portfolio.css'
 import Resume from './Resume';
-
+import { Link } from "react-router-dom";
 
 function Profile() {
     return (
@@ -66,10 +66,9 @@ function Profile() {
                            </span>
                         </div>
                         <div className="profile-options">
-                            <button className="btn1 primary-btn">
-                                {""}
-                                Hire Me{ ""}
-                            </button>
+                            
+                            <Link to="/Hire" class="btn btn--orange1">Hire Developer</Link>
+                           
                             <a href="wagolemusaCV.pdf" download="wagolemusaCV.pdf">
                                 <button className="btn1 highlighted-btn">Get Resume</button>
                             </a>

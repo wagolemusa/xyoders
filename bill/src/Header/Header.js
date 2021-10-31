@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import xycodedr from '../images/xycodedr.jpg';
-import xy1 from '../images/xy1.jpg'
+import reb from '../images/reb.png'
 import { Link } from "react-router-dom";
 export default function Header(){
     return (
@@ -10,22 +10,22 @@ export default function Header(){
             <div className="row">
             <div className="col-md-6">
 
-                <h2>We are passionate for development of scalable
-                    applications.</h2>
-                    <h5>Expert in devising innovative and tailored enterprise solutions
+                <h2>We are passionate for development of <span>scalable
+                    applications.</span></h2>
+                    {/* <h5>Expert in devising innovative and tailored enterprise solutions
                     and problem solving to assist businesses achieve their goals in a variety of
-                    industries.</h5>
+                    industries.</h5> */}
                     <p>Excels in every stage of the life cycle of software development,
                     including design creation, coding, debugging, testing, and maintenance using
                     industry best practices.</p>
                     <br/>
                     <Link to="/Hire" class="btn btn--orange">Hire Developer</Link>
                     
-                    <a href="/signup"  class="btn btn--orange_signup">Sign-up</a>
+                    <Link to="/Register"  class="btn btn--orange_signup">Write Blogs</Link>
 
                 </div>
                 <div className="col-md-6">
-                    <img src={xycodedr} alt="xycoders" />
+                    <img src={reb} alt="xycoders" />
                </div>
         </div>
         </div>

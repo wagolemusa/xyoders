@@ -32,14 +32,15 @@
 
 
 .blog-back{
-    padding: 30px 10px;
+    /* padding: 5rem; */
     background-color: #f8f8f8;
     border: 1px solid #f2f2f2;
     border-radius: 5px;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 .mini-track {
     max-width: 360px;
@@ -105,4 +106,131 @@
     transition: color .2s;
   text-decoration: none;
     
+}
+
+.plan {
+    /* padding: 5rem; */
+    /* background-color: #f8f8f8; */
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    position: relative;
+    padding: 6rem;
+}
+
+.plan h2 {
+    color: #39C0ED;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.plan span {
+    color: #F93154;
+}
+element.style {
+}
+.list-group .list-group-item:last-child {
+    -webkit-border-bottom-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+    -webkit-border-bottom-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.list-group-item+.list-group-item {
+    border-top-width: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.list-group-item {
+    cursor: pointer;
+ 
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    /* color: #262626; */
+    padding-left: 2rem;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.planimag img{
+    width: 900px;
+}
+.list-group-item p{
+    /* color:  #1476f2; */
+}
+.plan h3{
+    font-size: 18px;
+    color: rgba(50,50,50,.7);
+}
+
+.middle {
+    padding: 4rem;
+}
+.middle h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.middle h2{
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #565B73;
+}
+
+.card i{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+.card i:hover {
+    color: #1476f2;
+}
+
+.middle img {
+    height: 500px;
+}
+
+.panel-heading span{
+    font-size: 22px;
+   
+}
+.sizeme {
+    width: 100%;
+}
+
+.sizeme2{
+    width: 100%;
+}
+
+.contanct-section{
+    background-image: url("../images/blox1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+}
+.contanct-section p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.background-sestion {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    background: rgba(0, 0, 0, 0.5); 
+    /* background-color: red; */
 }

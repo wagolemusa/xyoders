@@ -244,12 +244,16 @@ export default function Resume(){
                                         <li>Africastalking (sending SMS)</li>
                                         <li>ES6 JavaScript(For fetching APIs)</li>
                                     </ul>
-                                    <a href="https://wagolemusa.github.io/" target="_blank">
-                                    Project Link
-                                </a>  
+                                    
+                                     <a href="https://wagolemusa.github.io/" target="_blank">
+                                        Project Link
+                                   
+                                    </a>  
+                                   
                                 <br/><br/>
                                 </div>
                             </div>
+                           
                             </div>
                             <div class="resume-main-heading">
                             <div class="heading-bullett"></div>

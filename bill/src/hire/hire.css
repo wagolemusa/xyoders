@@ -37,7 +37,7 @@
     /* font-size: 56px; */
     line-height: 1.3em;
 }
-.sidejobback span{
+.titleme span{
     color: #F93154;
 }
 .sign-page_jobs input[type="text"] {
@@ -126,4 +126,22 @@
 }
 .Login__content h1{
     font-size: 26px;
+}
+
+.jobs-icon{
+    padding-left: 150px;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+.jobs-icon i{
+    font-size: 40px;
+    color: #F93154;
+    font-weight: 600;
+}
+.jobs-icon span{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+
 }

@@ -5,10 +5,10 @@ export default  function Posts({posts}){
     return(
         <div className="blog-back">
         <div className="posts">
-            <div className="container">
+            <div className="container-fluid">
             <div className="row">
                 {posts.map((p)=>(
-                    <div  className="col-md-4">
+                    <div  className="col-md-3">
                         <Blog post={p}/>
                     </div>
             ))}
