@@ -60,7 +60,7 @@ function Single(){
                               
                               {post.photo && (
                                   <img 
-                                    src={ PF + post.photo}
+                                    src={post.photo}
                                     alt=""
                                     className="singlePostImg"
                                     />

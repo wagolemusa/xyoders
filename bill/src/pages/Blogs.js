@@ -10,7 +10,7 @@ export default function Blog({post}){
                 <div className="container">
                             <div className="mini-track__body">
                             <Link to={`/post/${post._id}`}>
-                                {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
+                                {post.photo && <img className="postImg" src={post.photo} alt="" />}
                             </Link><br/>
                                 <div className="postCats">
                                     {post.categories.map((c) =>{

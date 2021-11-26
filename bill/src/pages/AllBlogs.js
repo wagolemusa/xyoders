@@ -23,7 +23,7 @@ return(
                               
                             <div className="mini-track__body">
                             <Link to={`/post/${p._id}`}>
-                                {p.photo && <img className="postImg" src={PF + p.photo} alt="" />}
+                                {p.photo && <img className="postImg" src={p.photo} alt="" />}
                             </Link><br/>
                                 <div className="postCats">
                                  
