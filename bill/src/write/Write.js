@@ -10,31 +10,46 @@ function Write(){
     const [file, setFile] = useState("")
     const [categories, setCategories] = useState("")
     const { user } = useContext(Context)
+    const [fileInputState, setFileInputState ] = useState('');
+    const [ selectedFile, setSelectedFile] = useState('');
 
+   
+    const handelUpload = async (e) =>{
+        try{
+            const image = e.target.files[0]
+            const formData = new FormData;
+            formData.append("photo", image);
+            const {data} = await axios.post("/posts/upload", formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                    "Access-Control-Allow-Origin": "*"
+                }
+            })
+            setFile(data)
+            
+        }catch(error){
+            console.log(error)
+        }
+    }
+    
     const handelSubmit = async (e) => {
         e.preventDefault();
         const newPost = {
             username:user.username,
             title,
             desc,
+            photo:file,
             categories,
         };
-        if (file){
-            const data = new FormData();
-            const filename = Date.now() + file.name;
-            data.append("name", filename);
-            data.append("file", file);
-            newPost.photo = filename;
 
-            try{
-                await axios.post("/upload", data);
-            } catch (err){}
-        }try{
+     
+        try{
             const res  = await axios.post("/posts", newPost);
-            window.location.replace("/post/" +  res.data._id);
+            // window.location.replace("/post/" +  res.data._id);
         } catch (err) {}
 
     };
+
 
     const [cats, setCats] = useState([]);
 
@@ -50,9 +65,9 @@ function Write(){
         <section className="writesetion">
         <div className="container" >
             <div className="wite">
-            <form  className="writeForm" onSubmit={handelSubmit}>
+            <form  encType="multipart/form-data" className="writeForm" onSubmit={handelSubmit}>
                 { file && (
-                    <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
+                    <img className="writeImg" src={file} alt="" />
                 )}
                 
 
@@ -60,8 +75,9 @@ function Write(){
                         <label htmlFor="fileInput">Upload Images&nbsp;
                             <i className="writeIcon fas fa-plus"></i><br/><br/>
                             
-                            <input type="file" id="fileInput" style={{display:"none"}} 
-                            onChange={(e) => setFile(e.target.files[0])}/>
+                            <input type="file" id="fileInput" style={{display:"none"}}  name="image"
+                             onChange={handelUpload}/>
+
                             <input type="text" placeholder="Title" className="writeInput" autoFocus={true} 
                             onChange={(e) => setTitle(e.target.value)}/>
                         </label>
