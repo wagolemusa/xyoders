@@ -3,6 +3,9 @@ import './write.css'
 import index from '../images/index.jpeg'
 import { Context } from '../context/Context'
 import axios from 'axios'
+import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
+
 
 function Write(){
     const [title, setTitle] = useState("")
@@ -10,10 +13,16 @@ function Write(){
     const [file, setFile] = useState("")
     const [categories, setCategories] = useState("")
     const { user } = useContext(Context)
-    const [fileInputState, setFileInputState ] = useState('');
-    const [ selectedFile, setSelectedFile] = useState('');
+    
+    // const [ markdown, setDesc] = useState("")
+//    const markdown = "Just a link: https://reactjs.com."
 
-   
+
+
+    // const inputdata = (e) =>{
+    //     const newValue = e.target.value;
+    //     setMarkdown(newValue)
+    // }
     const handelUpload = async (e) =>{
         try{
             const image = e.target.files[0]
@@ -63,13 +72,18 @@ function Write(){
 
     return(
         <section className="writesetion">
-        <div className="container" >
+        <div className="container-fluid">
+            <div class="row">
+                <div className="col-md-2">
+                </div>
+                <div className="col-md-8">
             <div className="wite">
+ 
+                
             <form  encType="multipart/form-data" className="writeForm" onSubmit={handelSubmit}>
-                { file && (
+            { file && (
                     <img className="writeImg" src={file} alt="" />
                 )}
-                
 
                     <div className="wirteFormGroup">
                         <label htmlFor="fileInput">Upload Images&nbsp;
@@ -85,9 +99,9 @@ function Write(){
                     <br/>
 
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="form5Example1"></label>
-                            <select class="select" onChange={(e) => setCategories(e.target.value)}
+                    <div class="form-outline">
+                        <label  for="form5Example1"></label>
+                            <select class="select"  onChange={(e) => setCategories(e.target.value)}
                             >
                                  {cats.map((c) =>(
                             <option>{c.name}</option>
@@ -97,11 +111,15 @@ function Write(){
                            
                         </div>
                     <div className="wirteFormGroup">
-                        <textarea 
+                        <textarea  value={desc}
                             placeholder="Write about Code ....."
                             type="text"
                             className="writeInput writeText"
-                            onChange={(e) => setDesc(e.target.value)}>
+                            //  onChange={(e) => setMarkd/own(e.target.value)}
+                            // onChange={inputdata}
+                             onChange={(e) => setDesc(e.target.value)}
+                            // onChange={inputdata}
+                             >
                         </textarea>
                        
                     </div>
@@ -110,6 +128,12 @@ function Write(){
                    
                 </form>
             </div>
+            </div>
+            <div className="col-md-2">
+          
+                {/* <ReactMarkdown children={desc} remarkPlugins={[remarkGfm]} />, */}
+            </div>
+        </div>
             
         </div>
         </section>

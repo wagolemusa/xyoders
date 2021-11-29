@@ -6,6 +6,8 @@ import axios from 'axios'
 import Sidebar from "../sidebar/Sidebar";
 import { Link } from "react-router-dom";
 import { Context } from "../context/Context";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
 
 function Single(){  
     const location = useLocation()
@@ -97,10 +99,13 @@ function Single(){
                                 { updateMode ? (
                                     <textarea className="singlePostDescUpdate" value={desc}
                                         onChange= {(e) => setDesc(e.target.value)}
+
                                     />
                                 ):(
                                  <p className="singlePostDesc">
-                                    {desc}
+
+                                  
+                                    <ReactMarkdown children={desc} remarkPlugins={[remarkGfm]} />,
                                 </p>
                                 )}
                             </div>

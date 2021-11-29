@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import {Link} from 'react-router-dom'
+import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
 
 export default function Blog({post}){
     const PF = "http://localhost:5000/images/"
@@ -23,7 +25,9 @@ export default function Blog({post}){
                             </div>
                             
                                 <p>
-                                    {post.desc.substring(0, 100)}
+                         
+                         
+                                  {post.desc.substring(0, 100)}  
                                 </p>
                                 <div className="button--link-small">
                                 <Link to={`/post/${post._id}`} className="link">

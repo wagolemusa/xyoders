@@ -29,6 +29,8 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "path": "^0.12.7",
+    "react-markdown": "^7.1.0",
+    "remark-gfm": "^3.0.1",
     "stripe": "^8.142.0",
     "uuid": "^8.3.2"
   },
