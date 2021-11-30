@@ -100,7 +100,7 @@ function Write(){
 
 
                     <div class="form-outline">
-                        <label  for="form5Example1"></label>
+                        <label class="form-label" for="form5Example1"></label>
                             <select class="select"  onChange={(e) => setCategories(e.target.value)}
                             >
                                  {cats.map((c) =>(
