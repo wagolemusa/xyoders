@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node -r esm",
     "dev": "nodemon -r esm .",
-    "start": "node index.js",
+    "build": "cd bill && npm install && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
