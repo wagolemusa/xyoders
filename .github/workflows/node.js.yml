@@ -18,14 +18,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run:
         npm install --save --legacy-peer-deps
-        npm cache clean
-        npm install - g npm
-        npm install
         cd bill
         npm install --save --legacy-peer-deps
-        npm cache clean
-        npm install - g npm
-        npm install
         npm run build
         cd ..
         pm2 stop 0
