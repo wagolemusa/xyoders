@@ -17,9 +17,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run:
-        npm i
+        npm install
         cd bill
-        npm i
+        npm install
         npm run build
 
 
