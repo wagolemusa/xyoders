@@ -22,7 +22,7 @@ dotenv.config()
 app.use(cors());
 app.use(express.json())
 app.use("/images", express.static(path.join(__dirname, "/images")));
-app.use(express.static(path.join(__dirname,"./bill","index.html")))
+app.use(express.static(path.join(__dirname,"./bill/build")))
 app.use(express.static(path.join(__dirname, "uploads")))
 
 app.use(express.json({limit: "50mb" }));
