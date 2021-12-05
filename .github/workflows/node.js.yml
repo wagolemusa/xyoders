@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run:
-        cd xyoders/xyoders/bill
+        cd /var/www/xycoders/_work/xyoders/xyoders/bill
         npm install --force
         npm run build
         # cd ..
