@@ -2015,10 +2015,10 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
-"react-markdown@^7.1.0":
-  "integrity" "sha512-hL8cLLkTydyoKlZWZOjlU6TvMYIw9qKLh1CCzVfnhKt/R/SnKVAqiyugetXY61CkjhBqJl2C5FdU3OwHYo7SrQ=="
-  "resolved" "https://registry.npmjs.org/react-markdown/-/react-markdown-7.1.0.tgz"
-  "version" "7.1.0"
+"react-markdown@^7.1.1":
+  "integrity" "sha512-bXS7indkcPlCLB6wRFFzX8Xdghr62TBxUF2587o+CUkaZlNaoILb2qNt+5pYmTZuCOC+OeEcdJ+06mu5whtCVQ=="
+  "resolved" "https://registry.npmjs.org/react-markdown/-/react-markdown-7.1.1.tgz"
+  "version" "7.1.1"
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/unist" "^2.0.0"
