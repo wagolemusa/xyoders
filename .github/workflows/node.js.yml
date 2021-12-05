@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run:
-        cd bill
+        cd xyoders/bill
         npm install --force
         npm run build
         # cd ..
