@@ -1,3 +1,4 @@
+import React from 'react'
 import { createContext, useEffect, useReducer } from "react";
 import Reducer from "./Reducer";
 
@@ -17,6 +18,7 @@ export const ContextProvider = ({ children }) => {
   }, [state.user]);
 
   return (
+
     <Context.Provider
       value={{
         user: state.user,

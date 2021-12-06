@@ -14,9 +14,11 @@ export default function Blog({post}){
                             <Link to={`/post/${post._id}`}>
                                 {post.photo && <img className="postImg" src={post.photo} alt="" />}
                             </Link><br/>
+                               
                                 <div className="postCats">
+                              
                                     {post.categories.map((c) =>{
-                                        <span className="postcats">{c.name}</span>
+                                       return(<span className="postcats">{c.name}</span>);
                                     })}
                              <div className="linkme">
                                 <Link to={`/post/${post._id}`} className="link">

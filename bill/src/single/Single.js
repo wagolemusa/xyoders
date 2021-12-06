@@ -1,5 +1,5 @@
-
-import React, { useContext, useEffect, useState } from "react";
+import React from 'react';
+import { useContext, useEffect, useState } from "react";
 import './single.css'
 import { useLocation } from 'react-router'
 import axios from 'axios'
@@ -76,7 +76,7 @@ function Single(){
 
                                     <h1 className="singlePostTile">
                                         {title}
-                                        {post.username === user?.username && (
+                                        {post.username === user?.username &&  (
                                         <div className="singlePostEdit">
                                         <i className="singlePostIcon far fa-trash-alt"
                                         onClick={handleDelete}></i>
