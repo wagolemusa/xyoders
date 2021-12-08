@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run:
-        npm install
+        npm install --legacy-peer-deps
       working-directory: bill
     - run:
         npm run build
