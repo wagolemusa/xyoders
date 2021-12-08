@@ -7,7 +7,7 @@ import Sidebar from "../sidebar/Sidebar";
 import { Link } from "react-router-dom";
 import { Context } from "../context/Context";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from 'remark-gfm'
+
 
 function Single(){  
     const location = useLocation()
@@ -105,7 +105,7 @@ function Single(){
                                  <p className="singlePostDesc">
 
                                   
-                                    <ReactMarkdown children={desc} remarkPlugins={[remarkGfm]} />,
+                                    {desc} 
                                 </p>
                                 )}
                             </div>

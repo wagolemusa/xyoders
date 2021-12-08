@@ -4,7 +4,7 @@ import index from '../images/index.jpeg'
 import { Context } from '../context/Context'
 import axios from 'axios'
 import ReactMarkdown from "react-markdown";
-import remarkGfm from 'remark-gfm'
+// import remarkGfm from 'remark-gfm'
 
 
 function Write(){
