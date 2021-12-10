@@ -6,14 +6,12 @@ import axios from 'axios'
 import Sidebar from "../sidebar/Sidebar";
 import { Link } from "react-router-dom";
 import { Context } from "../context/Context";
-import ReactMarkdown from "react-markdown";
 
 
 function Single(){  
     const location = useLocation()
     const path = location.pathname.split("/")[2];
     const  [post, setPost] = useState({});
-    const PF = "http://localhost:5000/images/";
     const { user } = useContext(Context);
 
     const [title, setTitle] = useState("")

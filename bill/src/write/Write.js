@@ -1,11 +1,7 @@
 import React, { useContext, useState,useEffect } from 'react'
 import './write.css'
-import index from '../images/index.jpeg'
 import { Context } from '../context/Context'
 import axios from 'axios'
-import ReactMarkdown from "react-markdown";
-// import remarkGfm from 'remark-gfm'
-
 
 function Write(){
     const [title, setTitle] = useState("")
@@ -58,7 +54,6 @@ function Write(){
         } catch (err) {}
 
     };
-
 
     const [cats, setCats] = useState([]);
 
@@ -114,7 +109,7 @@ function Write(){
                         <textarea  value={desc}
                             placeholder="Write about Code ....."
                             type="text"
-                            className="writeInput writeText"
+                            className="writeInput writeText" 
                             //  onChange={(e) => setMarkd/own(e.target.value)}
                             // onChange={inputdata}
                              onChange={(e) => setDesc(e.target.value)}
