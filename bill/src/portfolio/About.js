@@ -24,19 +24,19 @@ export default function About(){
                             </ol>
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                    <img class="d-block" src={rr1}/>
+                                    <img class="d-block" src={rr1} alt='images'/>
                                     <div class="carousel-caption d-none d-md-block">
                                         {/* <h5>Nature, United States</h5> */}
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src={rexx}/>
+                                    <img class="d-block" src={rexx} alt='images'/>
                                     <div class="carousel-caption d-none d-md-block">
                                         {/* <h5>Somewhere Beyond, United States</h5> */}
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src={rr}/>
+                                    <img class="d-block" src={rr} alt='images'/>
                                     <div class="carousel-caption d-none d-md-block">
                                         {/* <h5>Yellowstone National Park, United States</h5> */}
                                     </div>

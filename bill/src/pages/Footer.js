@@ -12,12 +12,12 @@ export default function Footer(){
                 <hr/>
                 <div className="row footlink">
                 <div className="col">
-                    <a href="#">Hire Developer</a><br/>
-                    <a href="#">Blog</a>
+                    <a href="/Hire">Hire Developer</a><br/>
+                    <a href="/Allblogs">Blog</a>
                 </div>
                 <div className="col">
-                    <a href="#">Join Communit </a>
-                    <a href="#">Contact</a>
+                    <a href="/register">Join Community </a>
+                    <a href="/contact">Contact</a>
                 </div>
                 </div>
             </div>
@@ -34,24 +34,24 @@ export default function Footer(){
             <section class="col-md-4">
                 <h4>Follow us</h4>
                 <hr/>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-facebook-f"></i
                 ></a>
                 
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-twitter"></i
                 ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-google"></i
                 ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-instagram"></i
                 ></a>
 
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-linkedin-in"></i
                 ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="/" role="button"
                     ><i class="fab fa-github"></i
                 ></a>
                 </section>
@@ -60,7 +60,7 @@ export default function Footer(){
             <div className="xcme">
             <div class="text-center p-3">
                 © 2021 Copyright&nbsp;&nbsp;
-                <a class="text-white" href="#">xycoders</a>
+                <a class="text-white" href="/">xycoders</a>
             </div>
             </div>
 

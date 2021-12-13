@@ -11,7 +11,7 @@ function Middle_pages(){
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                        <img src={cx} class="img-fluid shadow-2-strong"/>
+                        <img src={cx} class="img-fluid shadow-2-strong" alt="images"/>
                     </div>
                     <div className="col-md-6">
                         <div className="row">
@@ -263,7 +263,7 @@ function Middle_pages(){
     </div>
     <div className="col-md-6">
         <div className="planimag">
-            <img src={sd} />
+            <img src={sd} alt="images"/>
         </div>
     </div>
     </div>

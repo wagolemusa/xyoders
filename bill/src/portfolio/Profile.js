@@ -15,20 +15,20 @@ function Profile() {
                 <div className="profile-details">
                     <div className="colz">
                         <div className="colz-icon">
-                            <a href="https://web.facebook.com/wagole.musa/" target="_blank">
+                            <a href="https://web.facebook.com/wagole.musa/" target="_blank" rel='noopener noreferrer'>
                                 <i class="fab fa-facebook"></i>
                             </a>
 
-                            <a href="https://github.com/wagolemusa" target="_blank">
+                            <a href="https://github.com/wagolemusa" target="_blank" rel='noopener noreferrer'>
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://web.telegram.org/z/#-383310540" target="_blank">
+                            <a href="https://web.telegram.org/z/#-383310540" target="_blank" rel='noopener noreferrer'>
                                 <i class="fab fa-telegram"></i>
                             </a>
-                            <a href="https://twitter.com/refugewize" target="_blank"> 
+                            <a href="https://twitter.com/refugewize" target="_blank" rel='noopener noreferrer'> 
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/wagole-musa/" target="_blank">
+                            <a href="https://www.linkedin.com/in/wagole-musa/" target="_blank" rel='noopener noreferrer'>
                                 <i class="fab fa-linkedin"></i>
                             </a>  
                         </div>

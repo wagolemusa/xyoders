@@ -13,8 +13,8 @@ function Navbar(){
     return(
         <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
         
-        <a class="navbar-brand pl-5" href="#">
-            <img src={googf} alt="logo-image" />
+        <a class="navbar-brand pl-5" href="/">
+            <img src={googf} alt="logoimage" />
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@ function Navbar(){
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <Link to='/' class="nav-link px-2" href="#">Home</Link>
+                <Link to='/' class="nav-link px-2">Home</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Acadamy</a>
+                <Link to='/acadamy' class="nav-link px-2">Acadamy</Link>
                 </li>
                 <li class="nav-item">
                 <Link to='/AllBlogs' class="nav-link px-2">Blogs</Link>

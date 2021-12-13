@@ -245,7 +245,7 @@ export default function Resume(){
                                         <li>ES6 JavaScript(For fetching APIs)</li>
                                     </ul>
                                     
-                                     <a href="https://wagolemusa.github.io/" target="_blank">
+                                     <a href="https://wagolemusa.github.io/" target="_blank" rel='noopener noreferrer'>
                                         Project Link
                                    
                                     </a>  
@@ -264,7 +264,7 @@ export default function Resume(){
                                     <ul>
                                         <li>Node, React, Express. MongoDB</li>
                                     </ul>
-                                <a href="https://givyapp.herokuapp.com/" target="_blank">
+                                <a href="https://givyapp.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
                                     Project Link
                                 </a>  
                                 <br/><br/>
@@ -283,7 +283,7 @@ export default function Resume(){
                                         <li>Django, PostgreSQL, ORM, Boostrap. Mpesa APIs.</li>
                                     
                                     </ul>
-                                    <a href="https://givyapp.herokuapp.com/" target="_blank">
+                                    <a href="https://givyapp.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
                                     Project Link
                                 </a>  
                                 <br/><br/>
@@ -300,7 +300,7 @@ export default function Resume(){
                                         <li>Django, PostgreSQL, ORM, Boostrap. Mpesa APIs</li>
                                     
                                     </ul>
-                                    <a href="https://caramelcoffee.herokuapp.com/" target="_blank">
+                                    <a href="https://caramelcoffee.herokuapp.com/" target="_blank"rel='noopener noreferrer' >
                                     Project Link
                                 </a>  
                                 <br/><br/>
@@ -318,7 +318,7 @@ export default function Resume(){
                                         <li>HTML, CSS, BOOTSTRAP</li>
                                     
                                     </ul>
-                                    <a href="https://www.korgasgroup.com/" target="_blank">
+                                    <a href="https://www.korgasgroup.com/" target="_blank" rel='noopener noreferrer'>
                                     Website Link
                                 </a>  
                                 <br/><br/>
@@ -335,7 +335,7 @@ export default function Resume(){
                                         <li>Django, PostgreSQL, ORM, Boostrap, Heroku</li>
                                     
                                     </ul>
-                                    <a href="https://chakraproperity.herokuapp.com/" target="_blank">
+                                    <a href="https://chakraproperity.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
                                     Website Link
                                 </a>  
                                 <br/><br/>
@@ -354,7 +354,7 @@ export default function Resume(){
                                         <li>HTML, CSS, BOOTSTRAP</li>
                                     
                                     </ul>
-                                    <a href="https://wagolemusa.gitlab.io/lakehub/" target="_blank">
+                                    <a href="https://wagolemusa.gitlab.io/lakehub/" target="_blank" rel='noopener noreferrer'>
                                     Website Link
                                 </a>  
                                 <br/><br/>
