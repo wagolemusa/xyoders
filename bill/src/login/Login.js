@@ -51,7 +51,7 @@ function Login(){
                             </div>
                             <button type="submit" class="btn btn-primary btn-block mb-4 loginback " disabled={isFetching}>Log In</button>
                     </form>
-                        <a href="#">Forgot your password</a>
+                        <a href="/password">Forgot your password</a>
                         <hr/>
                         <div id="logreg-forms">
                             <div class="social-login">

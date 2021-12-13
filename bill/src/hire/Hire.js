@@ -1,6 +1,5 @@
 import React from "react";
 import RenderSteps from "./RenderSteps";
-import gxd from '../images/gxd.png'
 import "./hire.css"
 
 export default function Hire(){

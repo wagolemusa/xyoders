@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import googf from '../images/googf.png'
 import { Link } from 'react-router-dom';
-import Blogs from '../pages/Blogs'
 import { Context } from '../context/Context';
 
 function Navbar(){

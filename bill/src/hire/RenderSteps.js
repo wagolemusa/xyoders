@@ -4,7 +4,6 @@ import Boss from './nextpages/Boss';
 import Review from './nextpages/Review';
 
 class RenderSteps extends Component{
-   
     constructor(props){
         super(props)
         this.handleChange = this.handleChange.bind(this)

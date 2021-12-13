@@ -1,11 +1,8 @@
 import React from 'react'
 import './Home.css'
 import {Link} from 'react-router-dom'
-import ReactMarkdown from "react-markdown";
-// import remarkGfm from 'remark-gfm'
 
 export default function Blog({post}){
-    const PF = "http://localhost:5000/images/"
     return(
         <div>
         <section>

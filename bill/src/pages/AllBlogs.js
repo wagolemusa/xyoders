@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function AllBlogs(){
-    const PF = "http://localhost:5000/images/"
     const [post, setCats] = useState([]);
 
     useEffect(() => {

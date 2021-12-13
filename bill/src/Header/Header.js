@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css'
-import xycodedr from '../images/xycodedr.jpg';
 import reb from '../images/reb.png'
 import { Link } from "react-router-dom";
 export default function Header(){
