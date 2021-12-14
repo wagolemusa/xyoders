@@ -1,9 +1,6 @@
 import React, { Component} from 'react'
 
 class Boss extends Component{
-    constructor(props){
-        super(props)
-    }
 
     continue = e =>{
         e.preventDefault();

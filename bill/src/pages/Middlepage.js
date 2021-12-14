@@ -1,7 +1,7 @@
 import React from 'react'
 import cx from '../images/cx.png'
 import sd from '../images/sd.gif'
-function Middle_pages(){
+function Middlepage(){
     return(
         <>
         <section className="middle">
@@ -273,4 +273,4 @@ function Middle_pages(){
     )
 }
 
-export default Middle_pages;
+export default Middlepage;

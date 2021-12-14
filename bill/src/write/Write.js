@@ -9,20 +9,11 @@ function Write(){
     const [file, setFile] = useState("")
     const [categories, setCategories] = useState("")
     const { user } = useContext(Context)
-    
-    // const [ markdown, setDesc] = useState("")
-//    const markdown = "Just a link: https://reactjs.com."
 
-
-
-    // const inputdata = (e) =>{
-    //     const newValue = e.target.value;
-    //     setMarkdown(newValue)
-    // }
     const handelUpload = async (e) =>{
         try{
             const image = e.target.files[0]
-            const formData = new FormData;
+            const formData = (new FormData());
             formData.append("photo", image);
             const {data} = await axios.post("/posts/upload", formData, {
                 headers: {
@@ -49,8 +40,8 @@ function Write(){
 
      
         try{
-            const res  = await axios.post("/posts", newPost);
-            // window.location.replace("/post/" +  res.data._id);
+            const res = await axios.post("/posts", newPost);
+            window.location.replace("/post/" +  res.data._id);
         } catch (err) {}
 
     };

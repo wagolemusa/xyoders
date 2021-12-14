@@ -4,11 +4,6 @@ import Boss from './nextpages/Boss';
 import Review from './nextpages/Review';
 
 class RenderSteps extends Component{
-    constructor(props){
-        super(props)
-        this.handleChange = this.handleChange.bind(this)
-    }
-
     state = {
         step: 1,
         resoan: "",
@@ -79,6 +74,13 @@ class RenderSteps extends Component{
                         values={values}
                     />
                 )
+            default:
+                return(
+                   <h1>
+                       Thanjs so much
+                   </h1>
+                )
+
         }
     }
 
