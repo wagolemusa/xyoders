@@ -77,7 +77,7 @@ class RenderSteps extends Component{
             default:
                 return(
                    <h1>
-                       Thanjs so much
+                       Thanks so much
                    </h1>
                 )
 

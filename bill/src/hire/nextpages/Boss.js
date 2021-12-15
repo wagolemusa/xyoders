@@ -1,7 +1,6 @@
 import React, { Component} from 'react'
 
 class Boss extends Component{
-
     continue = e =>{
         e.preventDefault();
         this.props.nextStep()

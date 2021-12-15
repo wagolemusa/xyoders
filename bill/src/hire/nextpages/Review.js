@@ -61,10 +61,7 @@ class Review extends Component{
                                         <li class="list-group-item">{company_size}</li>
                                     </ul>
                                     </div>
-                  
-
                             </div>
-                
                             <button type="submit" class="btn btn--orange">Save</button>
                             <button type="submit" class="btn btn--orange_signup" onClick={this.back}>Back</button>
                            
