@@ -28,6 +28,3 @@ jobs:
         pm2 save
     - run:
         sudo service nginx restart
-        
-
-
