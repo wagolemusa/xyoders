@@ -5,15 +5,17 @@ import Footer from './Footer';
 import './Portfolio.css'
 import Resume from './Resume';
 import { Link } from "react-router-dom";
+import Projects from './Projects';
 
 function Profile() {
     return (
-        <>
+       <>
+      
         <div className="home-container">
-        <div className="profile-container">
-            <div className="profile-parent">
-                <div className="profile-details">
-                    <div className="colz">
+        <div className='container-fluid'>
+            <div className='row'>
+                <div className='col-md-6'>
+                <div className="colz">
                         <div className="colz-icon">
                             <a href="https://web.facebook.com/wagole.musa/" target="_blank" rel='noopener noreferrer'>
                                 <i class="fab fa-facebook"></i>
@@ -51,9 +53,9 @@ function Profile() {
                                             1000,
                                             "MERN Stack Developer " ,
                                             1000,
-                                            "React / React Native Developer " ,
+                                            "React Developer " ,
                                             1000,
-                                            "Python / Django Developer ",
+                                            "Node.js / Solidity",
                                             1000,
                                             "SQL, PostgresSql, Mysql, MongoDB ",
                                             1000,
@@ -74,17 +76,25 @@ function Profile() {
                             </a>
                         </div>
                     </div>
-                    <div className="profile-picture">
+              
+
+                <div className='col-md-6'>
+
+                <div className="profile-picture">
+                    
                         <div className="profile-picture-background">
 
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+</div>
+       
         <Footer/>
         </div>
         <About/>
         <Resume/>
+        <Projects />
         </>
     )
 

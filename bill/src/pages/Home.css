@@ -231,6 +231,73 @@ element.style {
 .background-sestion {
     padding-bottom: 5rem;
     padding-top: 5rem;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.8); 
     /* background-color: red; */
+}
+
+@media only screen and (max-width: 600px) {
+
+.middle {
+    padding: 0.2rem;
+}
+.middle h1{
+    font-size: 28px;
+    padding-top: 1rem;
+   
+}
+.middle h2{
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.card i{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.card i:hover {
+    color: #1476f2;
+}
+
+.middle img {
+    height: 300px;
+}
+
+.contanct-section p{
+ 
+    font-size: 20px;
+}
+
+.plan {
+    /* padding: 5rem; */
+    /* background-color: #f8f8f8; */
+    border: 1px solid #f2f2f2;
+  
+    padding: 0.2rem;
+}
+
+.plan h2 {
+    color: #39C0ED;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+.plan h3{
+    font-size: 16px;
+
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .3rem 1rem;
+    /* color: #262626; */
+    padding-left: 2rem;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+
 }

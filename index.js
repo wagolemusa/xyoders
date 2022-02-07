@@ -46,8 +46,6 @@ const main = async () => {
 
 main();
 
-
-
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);

@@ -20,7 +20,7 @@ export default function Header(){
                     <br/>
                     <Link to="/Hire" class="btn btn--orange">Hire Developer</Link>
                     
-                    <Link to="/Register"  class="btn btn--orange_signup">Write Blogs</Link>
+                    <Link to="/Profile"  class="btn btn--orange_signup">portfolio</Link>
 
                 </div>
                 <div className="col-md-6">

@@ -18,7 +18,6 @@ export const ContextProvider = ({ children }) => {
   }, [state.user]);
 
   return (
-
     <Context.Provider
       value={{
         user: state.user,
