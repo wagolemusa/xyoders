@@ -31,16 +31,16 @@ function Navbar(){
                 <Link to='/acadamy' class="nav-link px-2">Acadamy</Link>
                 </li>
                 <li class="nav-item">
-                <Link to='/AllBlogs' class="nav-link px-2">Blogs</Link>
+                <Link to='/allBlogs' class="nav-link px-2">Blogs</Link>
                 </li>
                 <li class="nav-item">
-                <Link to='/Profile' class="nav-link px-2">Portfolio</Link>
+                <Link to='/profile' class="nav-link px-2">Portfolio</Link>
                 </li>
                 <li class="nav-item">
-                    <Link to='/Hire' class="nav-link px-2">Hire Developer</Link>
+                    <Link to='/hire' class="nav-link px-2">Hire Developer</Link>
                 </li>
                 <li class="nav-item">
-                <Link to='/Write' class="nav-link px-2">Write Blog</Link>
+                <Link to='/write' class="nav-link px-2">Write Blog</Link>
                 </li>
                 
                 <li className="topListItem" onClick={handleLogout}>
@@ -56,10 +56,10 @@ function Navbar(){
                     ) : (
                         <>
                             <li class="nav-item">
-                            <Link to='/Register' class="nav-link px-2">Register</Link>
+                            <Link to='/register' class="nav-link px-2">Register</Link>
                             </li>
                             <li class="nav-item">
-                            <Link to='/Login' class="nav-link px-2">Login</Link>
+                            <Link to='/login' class="nav-link px-2">Login</Link>
                             </li>
                         </> 
                     )

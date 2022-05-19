@@ -38,6 +38,7 @@ function App() {
           <Route path="/Profile">
             <Profile/>
           </Route>
+          
           <Route path="/Write">
           { user ? <Write/> : <Register/>}
           </Route>

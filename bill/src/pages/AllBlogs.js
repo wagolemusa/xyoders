@@ -12,6 +12,7 @@ function AllBlogs(){
         };
         getCats();
     }, []);
+    
 return(
     <div className="blog-back">
     <div className="posts">
