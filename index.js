@@ -29,6 +29,8 @@ app.use(express.static(path.join(__dirname, "uploads")))
 app.use(express.json({limit: "50mb" }));
 app.use(express.urlencoded({ limit: '50mb', extended: true}))
 
+let port = process.env.PORT || 5000;
+
 const main = async () => {
   try {
     // Connect with the database
@@ -39,7 +41,7 @@ const main = async () => {
     });
     consola.success("DATABASE CONNECTED...");
     // Start application listening for request on server
-    app.listen(PORT, () => consola.success(`Sever started on port ${PORT}`));
+    app.listen(port, () => consola.success(`Sever started on port ${port}`));
   } catch (err) {
     consola.error(`Unable to start the server \n${err.message}`);
   }
